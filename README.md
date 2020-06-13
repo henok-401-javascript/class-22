@@ -63,9 +63,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-Netlify :  https://boring-booth-d25fda.netlify.app/
 
-AWS S3 :http://lab-22.s3-website-us-west-2.amazonaws.com/
+
+Netlify :  https://boring-booth-d25fda.netlify.app
+
+AWS S3 : http://lab-22.s3-website-us-west-2.amazonaws.com
 
 AWS Amplify :https://master.d3hajo5ai3ing4.amplifyapp.com/
 
