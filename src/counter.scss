@@ -1,0 +1,20 @@
+section{
+  text-align: center;
+  margin-top: 15%;
+  span{
+    font-size: 70px; 
+    margin: 30px;
+  } 
+  button{
+    border-radius: 12px;
+  }
+  button:hover{
+    color: rgb(194, 15, 15);
+  }
+}
+.counter{
+  flex: 1;
+  height: 100%;
+  padding: 1em;
+}
+ 
