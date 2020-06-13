@@ -6,17 +6,21 @@ import CounterPage from '../components/Counter.js';
 configure({ adapter: new Adapter() });
 
 describe('Can successfully check component' , () =>{
-  it('IT successfully check the counter component' , () => {
+  it('IT successfully check the counter works' , () => {
     let component = shallow(< CounterPage />);
     expect(component.state('count')).toBe(0);
 
-    // let fakeData = {count:{polarity:'positive'}};
-    // let fakeData2 = {count:{polarity:'negative'}}
-    // component.find('.down clicker').simulate('onClick' , fakeData);
-    // component.find('.down clicker').simulate('onClick' , fakeData2);
-    // console.log(fakeData);
-    // expect(component.counter).toBe('positive');
-    // expect(component.counter).toBe('negative');
-
+  })
+  it('It successfully add' , () => {
+    let component = shallow(< CounterPage />);
+    component.find('span.up-clicker').simulate('Click' , {});
+    expect(component.state('count')).toBe(1);
+    expect(component.state('polarity')).toBe('positive');
+  })
+  it('It successfully subtracted' , () =>{
+    let component = shallow(< CounterPage />);
+    component.find('span.down-clicker').simulate('Click' , {});
+    expect(component.state('count')).toBe(-1);
+    expect(component.state('polarity')).toBe('negative');
   })
 })
