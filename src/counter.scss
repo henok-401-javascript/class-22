@@ -4,9 +4,16 @@ section{
   span{
     font-size: 70px; 
     margin: 30px;
+     &.negative{
+       color: rgb(194, 15, 15);
+     }
+     &.positive{
+       color: rgb(15, 194, 45);
+     }
   } 
   button{
     border-radius: 12px;
+    user-select: none;
   }
   button:hover{
     color: rgb(194, 15, 15);
@@ -17,4 +24,12 @@ section{
   height: 100%;
   padding: 1em;
 }
+span.down-clicker{
+  cursor: pointer;
  
+}
+span.up-clicker{
+  cursor: pointer;
+  
+}
+

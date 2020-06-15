@@ -34,14 +34,14 @@ class Counter extends React.Component {
 <button>
     <span className='down-clicker' onClick={this.handleDown}>
                     {' '}
-                    Minus{' '}
+                    -{' '}
                 </span>
               </button>
                
                 <span className={classes}>{this.state.count}</span>
                 <button> <span className='up-clicker' onClick={this.handleUp}>
                     {' '}
-                    Plus{' '}
+                    +{' '}
                 </span>
              </button>
             </section>
